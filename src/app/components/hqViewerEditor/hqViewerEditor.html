@@ -1,0 +1,62 @@
+<md-content layout="column" layout-fill>
+  <md-toolbar class="md-accent">
+    <div class="md-toolbar-tools">
+      <md-select
+        class="md-accent"
+        ng-model="$ctrl.scene"
+        ng-change="$ctrl.toScene($ctrl.scene)"
+        placeholder="Selecionar Cena">
+        <md-option ng-value="undefined"> Selecionar Cena </md-option>
+        <md-option ng-repeat="s in $ctrl.scenes track by $index" ng-value="s"> Scene {{ $index + 1 }} </md-option>
+      </md-select>
+
+      <span flex/>
+
+      <span>x: {{$ctrl.pageX}}, y: {{$ctrl.pageY}}</span>
+
+      <md-button md-raised ng-click="$ctrl.toOverview()">Resetar</md-button>
+
+    </div>
+  </md-toolbar>
+
+  <md-content class='hq-content' flex>
+    <div class="hq-scenes-controls">
+      <md-slider-container>
+        <span>X:</span>
+        <md-slider flex min="-100" max="100" ng-model="$ctrl.newScene.translateX" aria-label="translateX" id="translateX" ng-change="$ctrl.updateCamera()"></md-slider>
+        <md-input-container>
+          <input flex type="number"ng-model="$ctrl.newScene.translateX" aria-controls="translateX" ng-change="$ctrl.updateCamera()">
+        </md-input-container>
+      </md-slider-container>
+
+      <md-slider-container>
+        <span>Y:</span>
+        <md-slider flex min="-100" max="100" ng-model="$ctrl.newScene.translateY" aria-label="translateY" id="translateY" ng-change="$ctrl.updateCamera()"></md-slider>
+        <md-input-container>
+          <input flex type="number"ng-model="$ctrl.newScene.translateY" aria-controls="translateY" ng-change="$ctrl.updateCamera()">
+        </md-input-container>
+      </md-slider-container>
+
+      <md-slider-container>
+        <span>Z:</span>
+        <md-slider flex min="0" max="1000" ng-model="$ctrl.newScene.translateZ" aria-label="translateZ" id="translateZ" ng-change="$ctrl.updateCamera()"></md-slider>
+        <md-input-container>
+          <input flex type="number"ng-model="$ctrl.newScene.translateZ" aria-controls="translateZ" ng-change="$ctrl.updateCamera()">
+        </md-input-container>
+      </md-slider-container>
+      <div>
+        <md-button class='md-raised' ng-click="$ctrl.reset()">Reset</md-button>
+        <md-button class='md-raised md-accent' ng-click="$ctrl.save()">Salvar</md-button>
+      </div>
+    </div>
+    <div class="hq-scenes-log">
+      <small>Scenes</small>
+      <pre>{{ $ctrl.scenes | json }}</pre>
+    </div>
+    <div class='hq-wrapper'>
+      <div class='inner'>
+        <img src="assets/images/01.png" alt="Picture 1"><br>
+      </div>
+    </div>
+  </md-content>
+</md-content>
