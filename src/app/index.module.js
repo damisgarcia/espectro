@@ -10,6 +10,7 @@
       'ngMessages',
       'ngAria',
       'ngResource',
+      'angular-carousel',
       'ui.router',
       'ngMaterial',
       'toastr',

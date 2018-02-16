@@ -7,7 +7,7 @@
         ng-change="$ctrl.toScene($ctrl.scene)"
         placeholder="Selecionar Cena">
         <md-option ng-value="undefined"> Selecionar Cena </md-option>
-        <md-option ng-repeat="s in $ctrl.scenes track by $index" ng-value="s"> Scene {{ $index + 1 }} </md-option>
+        <md-option ng-repeat="s in $ctrl.magazineImages[$ctrl.slideIndex].scenes track by $index" ng-value="s"> Scene {{ $index + 1 }} </md-option>
       </md-select>
 
       <span flex></span>
@@ -20,10 +20,14 @@
   </md-toolbar>
 
   <md-content class='hq-content' flex ng-click="$ctrl.toOverview()">
-    <div class='hq-wrapper'>
-      <div class='inner'>
-        <img src="assets/images/01.png" alt="Picture 1"><br>
-      </div>
-    </div>
+    <ul rn-carousel rn-carousel-transition="slide" rn-carousel-index="$ctrl.slideIndex" class="image" layout-fill>
+      <li ng-repeat="image in $ctrl.magazineImages">
+        <div class='hq-wrapper' layout-fill>
+          <div class='inner' id="slide-{{$index}}">
+            <img ng-src="{{image.url}}" alt="{{image.url}}"><br>
+          </div>
+        </div>
+      </li>
+    </ul>
   </md-content>
 </md-content>

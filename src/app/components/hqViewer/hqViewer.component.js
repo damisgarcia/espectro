@@ -5,51 +5,271 @@
     .module('hqReader')
     .component('hqViewer', {
       controller: hqViewerCtrl,
-      templateUrl: "app/components/hqViewer/hqViewer.html"
+      templateUrl: "app/components/hqViewer/hqViewer.html",
+      bindings: {
+        imageUrl: "@"
+      }
     });
 
   /** @ngInject */
   function hqViewerCtrl($scope, $element, hotkeys){
-    var self = this;
+    var self = {
+      slideIndex: 0
+    };
 
-    self.scenes = [
+    self.magazineImages = [
       {
-        translateX: '0%',
-        translateY: '30%',
-        translateZ: '600px'
+        url: 'assets/images/magazine/01.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
       },
       {
-        translateX: '0px',
-        translateY: '10%',
-        translateZ: '650px'
+        url: 'assets/images/magazine/02.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
       },
       {
-        translateX: '0%',
-        translateY: '-25%',
-        translateZ: '600px'
+        url: 'assets/images/magazine/03.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
       },
       {
-        translateX: '20%',
-        translateY: '-25%',
-        translateZ: '650px'
+        url: 'assets/images/magazine/04.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
       },
       {
-        translateX: '0%',
-        translateY: '-25%',
-        translateZ: '650px'
+        url: 'assets/images/magazine/05.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
       },
       {
-        translateX: '-20%',
-        translateY: '-25%',
-        translateZ: '650px'
-      }
-    ]
+        url: 'assets/images/magazine/06.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
+      },
+      {
+        url: 'assets/images/magazine/07.png',
+        scenes: [
+          {
+            translateX: '0%',
+            translateY: '30%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '0px',
+            translateY: '10%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '600px'
+          },
+          {
+            translateX: '20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '0%',
+            translateY: '-25%',
+            translateZ: '650px'
+          },
+          {
+            translateX: '-20%',
+            translateY: '-25%',
+            translateZ: '650px'
+          }
+        ]
+      }      
+    ];
 
     self.position = undefined
 
     self.toScene = function(scene){
       if(angular.isDefined(scene)){
-        $element.find('.inner').attr(
+        $element.find('#slide-'+self.slideIndex).attr(
           'style', 'transform: translate3d('+ scene.translateX +', '+ scene.translateY +', '+ scene.translateZ +');'
         )
       } else {
@@ -63,7 +283,7 @@
 
     self.nextScene = function(){
       if(angular.isDefined(self.position)){
-        if( self.position < (self.scenes.length - 1)){
+        if( self.position < (self.magazineImages[self.slideIndex].scenes.length - 1)){
           self.position++;
         } else{
           self.toOverview();
@@ -72,7 +292,7 @@
         self.position = 0;
       };
       // Navigate to Scene
-      self.toScene(self.scenes[self.position]);
+      self.toScene(self.magazineImages[self.slideIndex].scenes[self.position]);
     };
 
     self.backScene = function(){
@@ -84,7 +304,7 @@
         }
       };
       // Navigate to Scene
-      self.toScene( self.scenes[self.position] );
+      self.toScene( self.magazineImages[self.slideIndex].scenes[self.position] );
     };
 
     self.toOverview = function(){
@@ -92,10 +312,18 @@
       self.position = undefined;
       self.scene = undefined;
       // Return to overview
-      $element.find('.inner').attr(
+      $element.find('#slide-'+ self.slideIndex).attr(
         'style', 'transform: translate3d(0px,0px,0px);'
       );
     };
+
+    // Observers
+
+    // Every time slide change
+    $scope.$watch("$ctrl.slideIndex", function(newIndex, oldIndex){
+      console.log("Slide Change")
+      self.position = undefined
+    })
 
     // Events
     $element.find('.inner img').on("mousemove", function(event){
@@ -107,8 +335,6 @@
 
       var centerX = elementOffset.left + angular.element(this).width() / 2;
       var centerY = elementOffset.top + angular.element(this).height() / 2;
-
-      console.log(centerX, centerY)
 
       self.pageX = parseInt(relX)
       self.pageY = parseInt(relY)
@@ -123,14 +349,14 @@
         combo: 'right',
         description: 'To next scene',
         callback: function() {
-          self.nextScene()
+          self.nextScene(self.slideIndex)
         }
       })
       .add({
         combo: 'left',
         description: 'To next scene',
         callback: function() {
-          self.backScene()
+          self.backScene(self.slideIndex)
         }
       });
 
