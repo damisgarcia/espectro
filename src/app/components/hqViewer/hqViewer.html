@@ -1,5 +1,5 @@
 <md-content layout="column" layout-fill>
-  <md-toolbar class="md-accent">
+  <md-toolbar class="md-accent ng-hide" ng-show="$ctrl.toolbarOpened">
     <div class="md-toolbar-tools">
       <md-select
         class="md-accent"
@@ -18,9 +18,14 @@
 
     </div>
   </md-toolbar>
-
+  
+  <md-button class="md-icon-button toggle-toolbar" ng-click="$ctrl.toolbarOpened = !$ctrl.toolbarOpened">
+    <i class="material-icons">settings</i>
+    <md-tooltip md-direction="left">Ver/Ocultar Configurações</md-tooltip>
+  </md-button>
+  
   <md-content class='hq-content' flex ng-click="$ctrl.toOverview()">
-    <ul rn-carousel rn-carousel-transition="slide" rn-carousel-index="$ctrl.slideIndex" class="image" layout-fill>
+    <ul rn-carousel rn-carousel-transition="slide" rn-carousel-index="$ctrl.slideIndex" rn-carousel-controls class="image" layout-fill>
       <li ng-repeat="image in $ctrl.magazineImages">
         <div class='hq-wrapper' layout-fill>
           <div class='inner' id="slide-{{$index}}">

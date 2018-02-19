@@ -4,6 +4,30 @@ hq-viewer{
   overflow: hidden;
   width: 100%;
   height: 100%;
+  
+  > md-content{
+    background-color: #eee;
+  }
+
+  .toggle-toolbar{
+    position: fixed;
+    top: calc( 51px + 20px);
+    right: 16px;
+    z-index: 10;
+    opacity: 0.5;
+  }
+
+  md-toolbar{
+    &.ng-hide {
+      transform: translateY(-100%);
+    }
+    
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      transition: all ease-in-out 0.3s;
+    }  
+  }
+  
 
   .hq-scenes-controls{
     position: relative;
@@ -46,7 +70,33 @@ hq-viewer{
     }
   }
 
-  // .hq-wrapper:hover .inner {
-  //   transform: translate3d(100px, 100px, 500px);
-  // }
+  .rn-carousel-controls{
+    .rn-carousel-control{
+      display: inline-flex;
+      align-content: center;
+      justify-content: center;
+      outline: none;
+      &:hover::before{
+        opacity: 0.5;
+      }
+      &::before{
+        color: black;
+        font-size: 64px;
+        opacity: 0.2;
+        transition: opacity 0.3s ease-in-out;
+      }
+      &.rn-carousel-control-next{
+        &::before{
+          font-family: 'Material Icons';
+          content: 'keyboard_arrow_right';
+        }
+      }
+      &.rn-carousel-control-prev{
+        &::before{
+          font-family: 'Material Icons';
+          content: 'keyboard_arrow_left';
+        }
+      }
+    }
+  }
 }
