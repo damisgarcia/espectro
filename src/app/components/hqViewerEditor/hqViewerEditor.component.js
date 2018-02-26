@@ -5,7 +5,10 @@
     .module('hqReader')
     .component('hqViewerEditor', {
       controller: hqViewerEditorCtrl,
-      templateUrl: "app/components/hqViewerEditor/hqViewerEditor.html"
+      templateUrl: "app/components/hqViewerEditor/hqViewerEditor.html",
+      bindings:{
+        imgPlaceholder: "@"
+      }
     });
 
   /** @ngInject */
@@ -21,6 +24,10 @@
     }
 
     self.position = undefined;
+
+    self.onSelect = function(file){
+      self.image = file
+    }
 
     self.toScene = function(scene){
       if(angular.isDefined(scene)){

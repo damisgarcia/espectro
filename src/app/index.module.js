@@ -10,6 +10,7 @@
       'ngMessages',
       'ngAria',
       'ngResource',
+      'ngFileUpload',
       'angular-carousel',
       'ui.router',
       'ngMaterial',

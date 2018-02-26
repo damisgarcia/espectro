@@ -1,5 +1,5 @@
 <md-content layout="column" layout-fill>
-  <md-toolbar class="md-accent">
+  <md-toolbar class="md-accent ng-hide">
     <div class="md-toolbar-tools">
       <md-select
         class="md-accent"
@@ -54,8 +54,9 @@
       <pre>{{ $ctrl.scenes | json }}</pre>
     </div>
     <div class='hq-wrapper'>
-      <div class='inner'>
-        <img src="assets/images/01.png" alt="Picture 1"><br>
+      <div class='inner' ngf-select="$ctrl.onSelect($file)" ngf-drop="$ctrl.onSelect($file)" ng-model="file" name="file" ngf-pattern="'image/*'"  ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="600" ngf-min-width="450">
+        <!-- <img src="assets/images/magazine/01.png" alt="Picture 1"><br> -->
+        <img ng-src="{{ $ctrl.image.$ngfBlobUrl || $ctrl.imgPlaceholder}}" alt="Placeholder"><br>
       </div>
     </div>
   </md-content>

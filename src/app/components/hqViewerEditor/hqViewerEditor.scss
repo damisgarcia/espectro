@@ -59,6 +59,10 @@ hq-viewer-editor{
     transform-origin: 0% 0% 0px;
     box-shadow: 1px 1px 18px transparentize(#333, 0.5);
 
+    &.dragover{
+      border: 2px solid orange;
+    }
+
     img{
       display: block;
       max-width: 100%;
