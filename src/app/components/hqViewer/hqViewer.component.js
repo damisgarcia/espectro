@@ -286,7 +286,7 @@
         if( self.position < (self.magazineImages[self.slideIndex].scenes.length - 1)){
           self.position++;
         } else{
-          self.toOverview();
+          return self.slideIndex < self.magazineImages.length ? self.slideIndex++ : self.toOverview();
         }
       } else{
         self.position = 0;
@@ -296,12 +296,16 @@
     };
 
     self.backScene = function(){
+      console.log(self.position)
       if(angular.isDefined(self.position)){
         if( self.position > 0){
           self.position--
         } else{
           return self.toOverview()
         }
+      } else{
+        self.slideIndex > 0 ? self.slideIndex-- : false
+        return self.toOverview()
       };
       // Navigate to Scene
       self.toScene( self.magazineImages[self.slideIndex].scenes[self.position] );
