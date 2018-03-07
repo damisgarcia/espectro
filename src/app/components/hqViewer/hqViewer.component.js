@@ -7,270 +7,31 @@
       controller: hqViewerCtrl,
       templateUrl: "app/components/hqViewer/hqViewer.html",
       bindings: {
-        imageUrl: "@"
+        placeholder: "@",
+        manifest: "@"
       }
     });
 
   /** @ngInject */
-  function hqViewerCtrl($scope, $element, hotkeys){
+  function hqViewerCtrl($scope, $element, $http, $log, hotkeys){
     var self = {
       slideIndex: 0
     };
 
-    self.magazineImages = [
-      {
-        url: 'assets/images/magazine/01.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/02.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/03.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/04.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/05.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/06.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      },
-      {
-        url: 'assets/images/magazine/07.png',
-        scenes: [
-          {
-            translateX: '0%',
-            translateY: '30%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '0px',
-            translateY: '10%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '600px'
-          },
-          {
-            translateX: '20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '0%',
-            translateY: '-25%',
-            translateZ: '650px'
-          },
-          {
-            translateX: '-20%',
-            translateY: '-25%',
-            translateZ: '650px'
-          }
-        ]
-      }      
-    ];
+    self.magazineImages = [];
 
     self.position = undefined
+
+    self.$onInit = function(){
+      $http.get(self.manifest).then(function(response){
+        self.magazineImages = response.data;
+      })
+    }
 
     self.toScene = function(scene){
       if(angular.isDefined(scene)){
         $element.find('#slide-'+self.slideIndex).attr(
-          'style', 'transform: translate3d('+ scene.translateX +', '+ scene.translateY +', '+ scene.translateZ +');'
+          'style', 'transform: translate3d('+ scene.translateX +'px, '+ scene.translateY +'px, '+ scene.translateZ +'px);'
         )
       } else {
         self.toOverview()
@@ -286,7 +47,13 @@
         if( self.position < (self.magazineImages[self.slideIndex].scenes.length - 1)){
           self.position++;
         } else{
-          return self.slideIndex < self.magazineImages.length ? self.slideIndex++ : self.toOverview();
+          if(self.slideIndex < self.magazineImages.length){
+            self.toOverview(); 
+            self.slideIndex++;
+          } 
+          else{
+            self.toOverview();
+          }
         }
       } else{
         self.position = 0;
@@ -311,12 +78,13 @@
       self.toScene( self.magazineImages[self.slideIndex].scenes[self.position] );
     };
 
-    self.toOverview = function(){
+    self.toOverview = function(slideIndex){
+      var index = slideIndex || self.slideIndex
       // reset variables
       self.position = undefined;
       self.scene = undefined;
       // Return to overview
-      $element.find('#slide-'+ self.slideIndex).attr(
+      $element.find('#slide-'+ index).attr(
         'style', 'transform: translate3d(0px,0px,0px);'
       );
     };
@@ -325,8 +93,8 @@
 
     // Every time slide change
     $scope.$watch("$ctrl.slideIndex", function(newIndex, oldIndex){
-      console.log("Slide Change")
-      self.position = undefined
+      $log.log("Slide Change")
+      self.position = undefined      
     })
 
     // Events
