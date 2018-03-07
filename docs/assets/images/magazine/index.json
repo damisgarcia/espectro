@@ -1,0 +1,292 @@
+[
+  {
+    "url": "assets/images/magazine/01.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 31,
+        "translateZ": 600
+      },
+      {
+        "translateX": 0,
+        "translateY": 5,
+        "translateZ": 700
+      },
+      {
+        "translateX": 30,
+        "translateY": -26,
+        "translateZ": 550
+      },
+      {
+        "translateX": 0,
+        "translateY": -26,
+        "translateZ": 550
+      },
+      {
+        "translateX": -30,
+        "translateY": -26,
+        "translateZ": 550
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/02.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 28,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -2,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 650
+      },
+      {
+        "translateX": -5,
+        "translateY": -32,
+        "translateZ": 770
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/03.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 28,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 2,
+        "translateZ": 760
+      },
+      {
+        "translateX": 0,
+        "translateY": -27,
+        "translateZ": 570
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/04.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 25,
+        "translateZ": 600
+      },
+      {
+        "translateX": 25,
+        "translateY": 25,
+        "translateZ": 750
+      },
+      {
+        "translateX": -25,
+        "translateY": 23,
+        "translateZ": 715
+      },
+      {
+        "translateX": 15,
+        "translateY": -10,
+        "translateZ": 715
+      },
+      {
+        "translateX": -2,
+        "translateY": -33,
+        "translateZ": 720
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/05.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 31,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": 15,
+        "translateZ": 715
+      },
+      {
+        "translateX": 0,
+        "translateY": -7,
+        "translateZ": 715
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 700
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/06.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 33,
+        "translateZ": 720
+      },
+      {
+        "translateX": 0,
+        "translateY": 12,
+        "translateZ": 720
+      },
+      {
+        "translateX": 0,
+        "translateY": -10,
+        "translateZ": 675
+      },
+      {
+        "translateX": 0,
+        "translateY": -34,
+        "translateZ": 700
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/07.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 25,
+        "translateZ": 600
+      },
+      {
+        "translateX": 0,
+        "translateY": -5,
+        "translateZ": 725
+      },
+      {
+        "translateX": 0,
+        "translateY": -31,
+        "translateZ": 670
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/08.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 710
+      },
+      {
+        "translateX": 0,
+        "translateY": 11,
+        "translateZ": 711
+      },
+      {
+        "translateX": 0,
+        "translateY": -10,
+        "translateZ": 675
+      },
+      {
+        "translateX": 0,
+        "translateY": -34,
+        "translateZ": 715
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/09.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 715
+      },
+      {
+        "translateX": 0,
+        "translateY": 9,
+        "translateZ": 715
+      },
+      {
+        "translateX": 0,
+        "translateY": -25,
+        "translateZ": 533
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/10.png",
+    "scenes": [
+      {
+        "translateX": 23,
+        "translateY": 30,
+        "translateZ": 730
+      },
+      {
+        "translateX": -23,
+        "translateY": 30,
+        "translateZ": 730
+      },
+      {
+        "translateX": 23,
+        "translateY": 2,
+        "translateZ": 720
+      },
+      {
+        "translateX": -23,
+        "translateY": 0,
+        "translateZ": 720
+      },
+      {
+        "translateX": 23,
+        "translateY": -29,
+        "translateZ": 720
+      },
+      {
+        "translateX": -23,
+        "translateY": -29,
+        "translateZ": 720
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/11.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 29,
+        "translateZ": 680
+      },
+      {
+        "translateX": 0,
+        "translateY": 1,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": -30,
+        "translateZ": 640
+      }
+    ]
+  },
+  {
+    "url": "assets/images/magazine/12.png",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 6,
+        "translateZ": 640
+      },
+      {
+        "translateX": 0,
+        "translateY": -29,
+        "translateZ": 700
+      }
+    ]
+  }
+]
