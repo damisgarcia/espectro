@@ -9,12 +9,17 @@ hq-viewer{
     background-color: #eee;
   }
 
-  .toggle-toolbar{
+  .right-menu{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: calc( 51px + 20px);
     right: 16px;
     z-index: 10;
     opacity: 0.5;
+    .material-icons{
+      font-size: 24px;
+    }
   }
 
   md-toolbar{

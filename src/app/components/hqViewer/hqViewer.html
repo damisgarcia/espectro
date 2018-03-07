@@ -18,11 +18,18 @@
 
     </div>
   </md-toolbar>
+
+  <div class="right-menu">
+    <md-button class="md-icon-button" ng-click="$ctrl.toolbarOpened = !$ctrl.toolbarOpened">
+      <i class="material-icons">settings</i>
+      <md-tooltip md-direction="left">Ver/Ocultar Configurações</md-tooltip>
+    </md-button>
+    <md-button class="md-icon-button" ng-show="$ctrl.scene" ng-click="$ctrl.toOverview()">
+      <i class="material-icons">zoom_out</i>
+      <md-tooltip md-direction="left">Visualizar Página Completa</md-tooltip>
+    </md-button>
+  </div>
   
-  <md-button class="md-icon-button toggle-toolbar" ng-click="$ctrl.toolbarOpened = !$ctrl.toolbarOpened">
-    <i class="material-icons">settings</i>
-    <md-tooltip md-direction="left">Ver/Ocultar Configurações</md-tooltip>
-  </md-button>
   
   <md-content class='hq-content' flex ng-click="$ctrl.toOverview()">
     <ul rn-carousel rn-carousel-transition="slide" rn-carousel-index="$ctrl.slideIndex" rn-carousel-controls class="image" layout-fill>
