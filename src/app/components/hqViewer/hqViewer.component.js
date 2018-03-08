@@ -31,7 +31,7 @@
     self.toScene = function(scene){
       if(angular.isDefined(scene)){
         $element.find('#slide-'+self.slideIndex).attr(
-          'style', 'transform: translate3d('+ scene.translateX +'px, '+ scene.translateY +'px, '+ scene.translateZ +'px);'
+          'style', 'transform: translate3d('+ scene.translateX +'%, '+ scene.translateY +'%, '+ scene.translateZ +'px);'
         )
       } else {
         self.toOverview()
