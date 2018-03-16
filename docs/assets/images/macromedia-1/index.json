@@ -1,0 +1,367 @@
+[
+  {
+    "url": "assets/images/macromedia-1/01.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 625
+      },
+      {
+        "translateX": 0,
+        "translateY": 0,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 590
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/02.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 37,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 14,
+        "translateZ": 690
+      },
+      {
+        "translateX": 0,
+        "translateY": -12,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -35,
+        "translateZ": 650
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/03.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 2,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 600
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/04.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 25,
+        "translateZ": 500
+      },
+      {
+        "translateX": 0,
+        "translateY": -5,
+        "translateZ": 690
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 580
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/05.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 33,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 2,
+        "translateZ": 620
+      },
+      {
+        "translateX": 0,
+        "translateY": -33,
+        "translateZ": 620
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/06.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 2,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -31,
+        "translateZ": 560
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/07.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 630
+      },
+      {
+        "translateX": 0,
+        "translateY": 1,
+        "translateZ": 620
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 600
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/08.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 34,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 3,
+        "translateZ": 640
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 575
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/09.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 0,
+        "translateZ": 609
+      },
+      {
+        "translateX": 0,
+        "translateY": -34,
+        "translateZ": 600
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/10.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 42,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 15,
+        "translateZ": 675
+      },
+      {
+        "translateX": 0,
+        "translateY": -9,
+        "translateZ": 690
+      },
+      {
+        "translateX": 0,
+        "translateY": -35,
+        "translateZ": 650
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/11.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 34,
+        "translateZ": 680
+      },
+      {
+        "translateX": 0,
+        "translateY": 10,
+        "translateZ": 680
+      },
+      {
+        "translateX": 0,
+        "translateY": -25,
+        "translateZ": 430
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/12.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 31,
+        "translateZ": 630
+      },
+      {
+        "translateX": 0,
+        "translateY": -19,
+        "translateZ": 250
+      },
+      {
+        "translateX": 0,
+        "translateY": 6,
+        "translateZ": 670
+      },
+      {
+        "translateX": 0,
+        "translateY": -17,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": -38,
+        "translateZ": 700
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/13.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 36,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 17,
+        "translateZ": 670
+      },
+      {
+        "translateX": 0,
+        "translateY": -21,
+        "translateZ": 450
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/14.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 6,
+        "translateZ": 660
+      },
+      {
+        "translateX": 0,
+        "translateY": -17,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": -39,
+        "translateZ": 650
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/14.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 6,
+        "translateZ": 660
+      },
+      {
+        "translateX": 0,
+        "translateY": -17,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": -39,
+        "translateZ": 650
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/15.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 33,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": 5,
+        "translateZ": 650
+      },
+      {
+        "translateX": 0,
+        "translateY": -29,
+        "translateZ": 488
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-1/16.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": -14,
+        "translateZ": 0
+      },
+      {
+        "translateX": 0,
+        "translateY": 22,
+        "translateZ": 500
+      }
+    ]
+  }
+]
