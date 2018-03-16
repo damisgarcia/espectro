@@ -12,7 +12,7 @@
     });
 
   /** @ngInject */
-  function hqViewerEditorCtrl($scope, $element, hotkeys){
+  function hqViewerEditorCtrl($scope, $element, $log, hotkeys){
     var self = this;
 
     self.scenes = [];
@@ -114,7 +114,7 @@
       var centerX = elementOffset.left + angular.element(this).width() / 2;
       var centerY = elementOffset.top + angular.element(this).height() / 2;
 
-      console.log(centerX, centerY);
+      $log.log(centerX, centerY);
 
       self.pageX = parseInt(relX)
       self.pageY = parseInt(relY)

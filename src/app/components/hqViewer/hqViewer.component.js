@@ -15,7 +15,8 @@
   /** @ngInject */
   function hqViewerCtrl($scope, $element, $http, $log, hotkeys){
     var self = {
-      slideIndex: 0
+      slideIndex: 0,
+      lastScene: undefined
     };
 
     self.magazineImages = [];
@@ -43,6 +44,12 @@
     }
 
     self.nextScene = function(){
+      if(angular.isDefined(self.lastScene)){
+        self.position = self.lastScene
+        self.lastScene = undefined
+        // Navigate to Scene
+        return self.toScene(self.magazineImages[self.slideIndex].scenes[self.position]);
+      }
       if(angular.isDefined(self.position)){
         if( self.position < (self.magazineImages[self.slideIndex].scenes.length - 1)){
           self.position++;
@@ -57,13 +64,12 @@
         }
       } else{
         self.position = 0;
-      };
+      }
       // Navigate to Scene
       self.toScene(self.magazineImages[self.slideIndex].scenes[self.position]);
     };
 
     self.backScene = function(){
-      console.log(self.position)
       if(angular.isDefined(self.position)){
         if( self.position > 0){
           self.position--
@@ -73,13 +79,17 @@
       } else{
         self.slideIndex > 0 ? self.slideIndex-- : false
         return self.toOverview()
-      };
+      }
       // Navigate to Scene
       self.toScene( self.magazineImages[self.slideIndex].scenes[self.position] );
     };
 
     self.toOverview = function(slideIndex){
       var index = slideIndex || self.slideIndex
+      // set last scene for cache possition
+      if(angular.isUndefined(self.lastScene)){
+        self.lastScene = self.position
+      }
       // reset variables
       self.position = undefined;
       self.scene = undefined;
@@ -92,21 +102,21 @@
     // Observers
 
     // Every time slide change
-    $scope.$watch("$ctrl.slideIndex", function(newIndex, oldIndex){
-      $log.log("Slide Change")
+    $scope.$watch("$ctrl.slideIndex", function(){
+      self.lastScene = undefined
       self.position = undefined      
     })
 
     // Events
     $element.find('.inner img').on("mousemove", function(event){
       var parentOffset = angular.element(this).parent().offset();
-      var elementOffset = angular.element(this).offset();
       //or angular.element(this).offset(); if you really just want the current element's offset
       var relX = event.pageX - parentOffset.left;
       var relY = event.pageY - parentOffset.top;
-
-      var centerX = elementOffset.left + angular.element(this).width() / 2;
-      var centerY = elementOffset.top + angular.element(this).height() / 2;
+      
+      // var elementOffset = angular.element(this).offset();
+      // var centerX = elementOffset.left + angular.element(this).width() / 2;
+      // var centerY = elementOffset.top + angular.element(this).height() / 2;
 
       self.pageX = parseInt(relX)
       self.pageY = parseInt(relY)
@@ -133,6 +143,6 @@
       });
 
     return self;
-  };
+  }
 
 })();

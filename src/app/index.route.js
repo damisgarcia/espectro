@@ -14,6 +14,18 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .state('macromediat1', {
+        url: '/macromedia-topico-1',
+        templateUrl: 'app/macromedia/topico-1.html',
+        controller: 'MacromediaController',
+        controllerAs: 'macromedia'
+      })
+      .state('macromediat2', {
+        url: '/macromedia-topico-2',
+        templateUrl: 'app/macromedia/topico-1.html',
+        controller: 'MacromediaController',
+        controllerAs: 'macromedia'
+      })
       .state('editor', {
         url: '/editor',
         templateUrl: 'app/editor/editor.html',

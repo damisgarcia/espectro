@@ -1,12 +1,12 @@
-(function() {
+(function () {
   'use strict';
 
   angular
     .module('hqReader')
-    .controller('MainController', MainController);
+    .controller('MacromediaController', MacromediaController);
 
   /** @ngInject */
-  function MainController() {
+  function MacromediaController() {
     var vm = this;
     return vm;
   }
