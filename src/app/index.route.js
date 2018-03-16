@@ -22,7 +22,7 @@
       })
       .state('macromediat2', {
         url: '/macromedia-topico-2',
-        templateUrl: 'app/macromedia/topico-1.html',
+        templateUrl: 'app/macromedia/topico-2.html',
         controller: 'MacromediaController',
         controllerAs: 'macromedia'
       })
