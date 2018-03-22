@@ -125,52 +125,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/06.jpg",
-    "scenes": [
-      {
-        "translateX": 0,
-        "translateY": 0,
-        "translateZ": 500
-      },
-      {
-        "translateX": 0,
-        "translateY": 32,
-        "translateZ": 700
-      },
-      {
-        "translateX": 27,
-        "translateY": 32,
-        "translateZ": 900
-      },
-      {
-        "translateX": -23,
-        "translateY": 31,
-        "translateZ": 850
-      },
-      {
-        "translateX": 19,
-        "translateY": 1,
-        "translateZ": 818
-      },
-      {
-        "translateX": -19,
-        "translateY": 1,
-        "translateZ": 820
-      },
-      {
-        "translateX": 18,
-        "translateY": -28,
-        "translateZ": 820
-      },
-      {
-        "translateX": -19,
-        "translateY": -28,
-        "translateZ": 820
-      }
-    ]
-  },
-  {
-    "url": "assets/images/macromedia-2/07.jpg",
+    "url": "assets/images/macromedia-2/06-07.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -219,6 +174,51 @@
     "scenes": [
       {
         "translateX": 0,
+        "translateY": 0,
+        "translateZ": 500
+      },
+      {
+        "translateX": 0,
+        "translateY": 32,
+        "translateZ": 700
+      },
+      {
+        "translateX": 27,
+        "translateY": 32,
+        "translateZ": 900
+      },
+      {
+        "translateX": -23,
+        "translateY": 31,
+        "translateZ": 850
+      },
+      {
+        "translateX": 19,
+        "translateY": 1,
+        "translateZ": 818
+      },
+      {
+        "translateX": -19,
+        "translateY": 1,
+        "translateZ": 820
+      },
+      {
+        "translateX": 18,
+        "translateY": -28,
+        "translateZ": 820
+      },
+      {
+        "translateX": -19,
+        "translateY": -28,
+        "translateZ": 820
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-2/09.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
         "translateY": 36,
         "translateZ": 715
       },
@@ -240,7 +240,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/09.jpg",
+    "url": "assets/images/macromedia-2/10.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -260,7 +260,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/10.jpg",
+    "url": "assets/images/macromedia-2/11.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -285,7 +285,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/11.jpg",
+    "url": "assets/images/macromedia-2/12.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -315,7 +315,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/12.jpg",
+    "url": "assets/images/macromedia-2/13.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -336,6 +336,71 @@
         "translateX": 0,
         "translateY": -34,
         "translateZ": 680
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-2/14.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 31,
+        "translateZ": 710
+      },
+      {
+        "translateX": 0,
+        "translateY": 8,
+        "translateZ": 720
+      },
+      {
+        "translateX": 0,
+        "translateY": -12,
+        "translateZ": 720
+      },
+      {
+        "translateX": 0,
+        "translateY": -34,
+        "translateZ": 720
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-2/15.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": 26,
+        "translateZ": 622
+      },
+      {
+        "translateX": 0,
+        "translateY": -4,
+        "translateZ": 700
+      },
+      {
+        "translateX": 0,
+        "translateY": -31,
+        "translateZ": 671
+      }
+    ]
+  },
+  {
+    "url": "assets/images/macromedia-2/16.jpg",
+    "scenes": [
+      {
+        "translateX": 0,
+        "translateY": -6,
+        "translateZ": 0
+      },
+      {
+        "translateX": 0,
+        "translateY": 6,
+        "translateZ": 630
+      },
+      {
+        "translateX": 16,
+        "translateY": -30,
+        "translateZ": 850
       }
     ]
   }
