@@ -20,6 +20,12 @@
         controller: 'MacromediaController',
         controllerAs: 'macromedia'
       })
+      .state('macromediat3', {
+        url: '/macromedia-topico-3',
+        templateUrl: 'app/macromedia/topico-3.html',
+        controller: 'MacromediaController',
+        controllerAs: 'macromedia'
+      })
       .state('editor', {
         url: '/editor',
         templateUrl: 'app/editor/editor.html',
