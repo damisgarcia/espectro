@@ -100,7 +100,7 @@
     ]
   },
   {
-    "url": "assets/images/macromedia-2/06-07.jpg",
+    "url": "assets/images/macromedia-2/06.jpg",
     "scenes": [
       {
         "translateX": 0,
@@ -116,7 +116,12 @@
         "translateX": 0,
         "translateY": -33,
         "translateZ": 650
-      },
+      }
+    ]    
+  },
+  {
+    "url": "assets/images/macromedia-2/07.jpg",
+    "scenes": [
       {
         "translateX": 0,
         "translateY": 33,

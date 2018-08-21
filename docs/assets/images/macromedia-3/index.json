@@ -4,18 +4,13 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": -5,
-        "translateZ": 0
-      },
-      {
-        "translateX": 0,
         "translateY": 30,
-        "translateZ": 500
+        "translateZ": 710
       },
       {
         "translateX": 0,
-        "translateY": -30,
-        "translateZ": 550
+        "translateY": -10,
+        "translateZ": 710
       }
     ]
   },
@@ -24,23 +19,18 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 35,
-        "translateZ": 675
+        "translateY": 32,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": 12,
-        "translateZ": 713
+        "translateY": 6,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -8,
-        "translateZ": 715
-      },
-      {
-        "translateX": 0,
-        "translateY": -32,
-        "translateZ": 670
+        "translateY": -28,
+        "translateZ": 600
       }
     ]
   },
@@ -49,23 +39,23 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 37,
-        "translateZ": 725
+        "translateY": 30,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": 18,
-        "translateZ": 715
+        "translateY": 8,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": -5,
-        "translateZ": 715
+        "translateY": -15,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": -32,
-        "translateZ": 675
+        "translateY": -35,
+        "translateZ": 700
       }
     ]
   },
@@ -73,54 +63,39 @@
     "url": "assets/images/macromedia-3/04.jpg",
     "scenes": [
       {
-        "translateX": 19,
-        "translateY": 37,
-        "translateZ": 775
-      },
-      {
-        "translateX": 19,
-        "translateY": 20,
-        "translateZ": 730
-      },
-      {
-        "translateX": -20,
-        "translateY": 26,
-        "translateZ": 753
-      },
-      {
-        "translateX": 23,
-        "translateY": -5,
-        "translateZ": 700
-      },
-      {
-        "translateX": -41,
-        "translateY": 1,
-        "translateZ": 711
-      },
-      {
-        "translateX": -3,
-        "translateY": -29,
+        "translateX": 0,
+        "translateY": 35,
         "translateZ": 660
+      },
+      {
+        "translateX": 0,
+        "translateY": 3,
+        "translateZ": 570
+      },
+      {
+        "translateX": 0,
+        "translateY": -32,
+        "translateZ": 680
       }
     ]
   },
   {
     "url": "assets/images/macromedia-3/05.jpg",
-    "scenes": [
+    "scenes":[
       {
         "translateX": 0,
-        "translateY": 30,
-        "translateZ": 680
+        "translateY": 31,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": 1,
-        "translateZ": 650
+        "translateY": 5,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": -31,
-        "translateZ": 650
+        "translateY": -28,
+        "translateZ": 600
       }
     ]
   },
@@ -128,44 +103,34 @@
     "url": "assets/images/macromedia-3/06-07.jpg",
     "scenes": [
       {
-        "translateX": 0,
-        "translateY": 0,
-        "translateZ": 500
+        "translateX": 30,
+        "translateY": 24,
+        "translateZ": 720
+      },
+      {
+        "translateX": 30,
+        "translateY": -10,
+        "translateZ": 800
       },
       {
         "translateX": 0,
-        "translateY": 32,
-        "translateZ": 700
-      },
-      {
-        "translateX": 27,
-        "translateY": 32,
-        "translateZ": 900
-      },
-      {
-        "translateX": -23,
-        "translateY": 31,
+        "translateY": 30,
         "translateZ": 850
       },
       {
-        "translateX": 19,
-        "translateY": 1,
-        "translateZ": 818
+          "translateX": -37,
+        "translateY": 24,
+        "translateZ": 748
       },
       {
-        "translateX": -19,
-        "translateY": 1,
-        "translateZ": 820
+        "translateX": 4,
+        "translateY": -18,
+        "translateZ": 850
       },
       {
-        "translateX": 18,
-        "translateY": -28,
-        "translateZ": 820
-      },
-      {
-        "translateX": -19,
-        "translateY": -28,
-        "translateZ": 820
+        "translateX": -40,
+        "translateY": -23,
+        "translateZ": 780
       }
     ]
   },
@@ -174,88 +139,48 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 0,
-        "translateZ": 500
-      },
-      {
-        "translateX": 0,
-        "translateY": 32,
+        "translateY": -35,
         "translateZ": 700
-      },
-      {
-        "translateX": 27,
-        "translateY": 32,
-        "translateZ": 900
-      },
-      {
-        "translateX": -23,
-        "translateY": 31,
-        "translateZ": 850
-      },
-      {
-        "translateX": 19,
-        "translateY": 1,
-        "translateZ": 818
-      },
-      {
-        "translateX": -19,
-        "translateY": 1,
-        "translateZ": 820
-      },
-      {
-        "translateX": 18,
-        "translateY": -28,
-        "translateZ": 820
-      },
-      {
-        "translateX": -19,
-        "translateY": -28,
-        "translateZ": 820
       }
     ]
   },
   {
     "url": "assets/images/macromedia-3/09.jpg",
-    "scenes": [
+    "scenes":[
       {
         "translateX": 0,
-        "translateY": 36,
-        "translateZ": 715
+        "translateY": 30,
+        "translateZ": 670
       },
       {
         "translateX": 0,
-        "translateY": 8,
-        "translateZ": 650
+        "translateY": 0,
+        "translateZ": 670
       },
       {
         "translateX": 0,
-        "translateY": -17,
-        "translateZ": 714
-      },
-      {
-        "translateX": 2,
-        "translateY": -36,
-        "translateZ": 750
+        "translateY": -27,
+        "translateZ": 550
       }
     ]
   },
   {
     "url": "assets/images/macromedia-3/10.jpg",
-    "scenes": [
+    "scenes":[
       {
         "translateX": 0,
-        "translateY": 27,
+        "translateY": 30,
+        "translateZ": 670
+      },
+      {
+        "translateX": 0,
+        "translateY": 0,
         "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -3,
-        "translateZ": 675
-      },
-      {
-        "translateX": 0,
         "translateY": -33,
-        "translateZ": 675
+        "translateZ": 620
       }
     ]
   },
@@ -264,23 +189,18 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 36,
-        "translateZ": 715
+        "translateY": 30,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": 12,
-        "translateZ": 670
+        "translateY": 0,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -13,
-        "translateZ": 710
-      },
-      {
-        "translateX": 0,
-        "translateY": -34,
-        "translateZ": 724
+        "translateY": -30,
+        "translateZ": 650
       }
     ]
   },
@@ -289,118 +209,101 @@
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 34,
-        "translateZ": 750
+        "translateY": 30,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": 15,
-        "translateZ": 720
+        "translateY": 0,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -3,
-        "translateZ": 730
-      },
-      {
-        "translateX": 0,
-        "translateY": -20,
-        "translateZ": 730
-      },
-      {
-        "translateX": 0,
-        "translateY": -35,
-        "translateZ": 725
+        "translateY": -30,
+        "translateZ": 650
       }
     ]
+    
   },
   {
     "url": "assets/images/macromedia-3/13.jpg",
     "scenes": [
       {
         "translateX": 0,
-        "translateY": 33,
-        "translateZ": 715
+        "translateY": 30,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": 12,
-        "translateZ": 715
+        "translateY": 0,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -11,
-        "translateZ": 715
-      },
-      {
-        "translateX": 0,
-        "translateY": -34,
-        "translateZ": 680
+        "translateY": -30,
+        "translateZ": 650
       }
-    ]
+    ]    
   },
   {
     "url": "assets/images/macromedia-3/14.jpg",
-    "scenes": [
+    "scenes":[
       {
         "translateX": 0,
-        "translateY": 31,
-        "translateZ": 710
+        "translateY": 30,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": 8,
-        "translateZ": 720
+        "translateY": 0,
+        "translateZ": 650
       },
       {
         "translateX": 0,
-        "translateY": -12,
-        "translateZ": 720
-      },
-      {
-        "translateX": 0,
-        "translateY": -34,
-        "translateZ": 720
+        "translateY": -32,
+        "translateZ": 590
       }
     ]
+    
   },
   {
     "url": "assets/images/macromedia-3/15.jpg",
-    "scenes": [
+    "scenes":[
       {
         "translateX": 0,
         "translateY": 26,
-        "translateZ": 622
+        "translateZ": 540
       },
       {
         "translateX": 0,
-        "translateY": -4,
+        "translateY": -10,
         "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": -31,
-        "translateZ": 671
+        "translateY": -33,
+        "translateZ": 700
       }
     ]
+    
   },
   {
     "url": "assets/images/macromedia-3/16.jpg",
     "scenes": [
       {
         "translateX": 0,
-        "translateY": -6,
-        "translateZ": 0
+        "translateY": 31,
+        "translateZ": 700
       },
       {
         "translateX": 0,
-        "translateY": 6,
-        "translateZ": 630
+        "translateY": 8,
+        "translateZ": 700
       },
       {
-        "translateX": 16,
-        "translateY": -30,
-        "translateZ": 850
+        "translateX": 0,
+        "translateY": -25,
+        "translateZ": 530
       }
     ]
   }
